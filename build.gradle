@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example.bug-test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.vertx:vertx-core:3.8.1'
+    compile 'io.vertx:vertx-jdbc-client:3.8.1'
+    compile 'org.postgresql:postgresql:9.4-1201-jdbc41'
+    testCompile 'junit:junit:4.12'
+}
